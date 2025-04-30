@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "43dea2db-e8e5-4f87-91c3-527f16f240d8",
+  "headMarkup" : "<script>\nwindow.addEventListener(\"onEmbeddedMessagingReady\", () => {\n               //embeddedservice_bootstrap.utilAPI.hideChatButton();\n        console.log ('Received the onEmbeddedMessagingReady event...');\n        var userId = $A.get('$SObjectType.CurrentUser.Id');\n        console.log ('Passing HiddenPrechatUserId = userId (currently Logged In User Id, or ' + userId + ')');\n        embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({'userId' : userId});\n    });\n\n\n</script>",
+  "id" : "4585f5e7-31c0-419d-a2c3-e530dd48ef6b",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "PRM Community Template",
+  "type" : "appPage"
+}

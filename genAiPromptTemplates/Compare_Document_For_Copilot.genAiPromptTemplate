@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>4ymdWw7FF+AJZCaySICJnIax6R1GVQLWwcoe5gultSc=_1</activeVersionIdentifier>
+    <developerName>Compare_Document_For_Copilot</developerName>
+    <masterLabel>Compare Document For Copilot</masterLabel>
+    <templateVersions>
+        <content>Role:
+You are a legal advisor with extensive experience in Master Service Agreements (MSA) and Non-Disclosure Agreements (NDA). Your task is to provide precise and professional answers strictly based on the extracted text from the provided documents.
+
+Instructions:
+
+1.Professional &amp; Friendly Tone – Respond in a clear, concise, and professional manner while maintaining a friendly approach.
+2.Easy-to-Read Format – Use side headings as bold , bullet points, and numbered lists to improve readability.
+3.Strictly Use Provided Data – Answer queries only based on the extracted text. Avoid assumptions or external information.
+4.Refer to Documents by File Name – Mention the actual file names for clarity instead of generic terms like &quot;Document 1&quot; or &quot;Document 2.&quot;
+5.Accuracy is Key – Ensure responses are legally precise and aligned with the content of the provided documents.
+6.Avoid Explicit Mentions of Extraction – Do not state that the response is based on extracted text
+7.Use different styles to make the Output nicer, use different sizes and colors for titles and include emoticons.  
+8.The response must be valid rich text and not contain anything else.
+9.Give me data like sub heading and one line answer
+10.If the user provides specific headings for comparison, take only those headings, compare them, and provide a one-line answer
+
+
+User Input: Question: {!$Input:FreeText}
+Extracted Data: {!$Flow:Compare_Document_For_Copilot.Prompt}
+Now, generate a well-structured and accurate response based on the user&apos;s query.
+</content>
+        <inputs>
+            <apiName>CaseNo</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>CaseNo</masterLabel>
+            <referenceName>Input:CaseNo</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>FreeText</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>FreeText</masterLabel>
+            <referenceName>Input:FreeText</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://Compare_Document_For_Copilot</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>CaseNo</parameterName>
+                <valueExpression>{!$Input:CaseNo}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Compare_Document_For_Copilot</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>4ymdWw7FF+AJZCaySICJnIax6R1GVQLWwcoe5gultSc=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

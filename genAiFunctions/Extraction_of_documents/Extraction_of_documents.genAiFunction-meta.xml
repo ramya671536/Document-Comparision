@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>When the user ask for the document comparison and always fire this prompt template</description>
+    <invocationTarget>Extraction_of_documents</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Extraction of documents</masterLabel>
+    <progressIndicatorMessage>When a user asks about the documents.</progressIndicatorMessage>
+</GenAiFunction>

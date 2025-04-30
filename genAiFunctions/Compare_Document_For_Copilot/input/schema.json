@@ -1,0 +1,28 @@
+{
+  "required" : [ "Input:CaseNo", "Input:FreeText" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:CaseNo" : {
+      "title" : "CaseNo",
+      "description" : "Collect Case Number.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Input:FreeText" : {
+      "title" : "FreeText",
+      "description" : "collect user input.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "citationMode" : {
+      "title" : "Citation Mode",
+      "description" : "Select Citation Mode",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

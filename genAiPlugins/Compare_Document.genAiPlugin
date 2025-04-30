@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This Will give a answers based on queries on Documents.</description>
+    <developerName>Compare_Document</developerName>
+    <genAiFunctions>
+        <functionName>Extraction_of_documents</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Do not include the term extracted from the document in the response while providing the output.</description>
+        <developerName>instruction_donotinclu0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_donotinclu0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Don&apos;t give any data more than one line just give data in one line.</description>
+        <developerName>instruction_dontgivean1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_dontgivean1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>give the clauses and data description in short form .</description>
+        <developerName>instruction_givethecla2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_givethecla2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Give the data has separate for different files and don&apos;t give like paragraphs.</description>
+        <developerName>instruction_givethedat3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_givethedat3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Give the Response in a easy readable format Use side headings, bullet points, and numbered lists to improve readability if needed.</description>
+        <developerName>instruction_givetheres4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_givetheres4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a customer asks any query just Give me data like subheading and one line answer.</description>
+        <developerName>instruction_ifacustome5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifacustome5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Take a users input directly in the Free Text and give the prompt response output.</description>
+        <developerName>instruction_takeausers6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_takeausers6</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When a user ask any any query please take a response directly from the Extraction of Documentation.</description>
+        <developerName>instruction_whenausera7</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenausera7</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Compare Document</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Extract each subheading or clause in a single line, ensuring the data remains concise.</scope>
+</GenAiPlugin>

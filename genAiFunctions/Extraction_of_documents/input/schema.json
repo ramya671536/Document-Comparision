@@ -1,0 +1,28 @@
+{
+  "required" : [ "Input:FreetextUserid", "Input:Free_Text" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:FreetextUserid" : {
+      "title" : "FreetextUserid",
+      "description" : "Always use MessagingSession.Id found in the context variable. Never use customer provided values",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Input:Free_Text" : {
+      "title" : "Free Text",
+      "description" : "Take a questions from the user",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "citationMode" : {
+      "title" : "Citation Mode",
+      "description" : "Select Citation Mode",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

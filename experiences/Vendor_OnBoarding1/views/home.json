@@ -1,0 +1,110 @@
+{
+  "appPageId" : "4585f5e7-31c0-419d-a2c3-e530dd48ef6b",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "856dd393-89b0-4ca7-9581-aa485c92190e",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1 style=\"text-align: center;\"><strong style=\"color: rgb(30, 36, 67); font-size: 28px;\">Welcome Vendors!</strong></h1>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "7e2149e0-8eed-4259-a460-507904dbca39",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cb9a3330-4ddd-4f62-83a4-b08aa7c0978e",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "flowArguments" : "",
+        "flowName" : "Vendor_Upload_documents"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "dc8caa58-89e6-4b66-90be-b119bd7fd046",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6085ee69-7e1e-49aa-b13f-e6c93ce56f2b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "My_ChatterGroups",
+        "layout" : "STANDARD",
+        "pageSize" : 1,
+        "scope" : "CollaborationGroup",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "2c311866-99f2-455f-9826-bd1b74d27804",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "deploymentName" : "Legal_Review_agent",
+        "hideChatButtonOnLoad" : "Default",
+        "isExpSiteAuthMode" : false,
+        "scrtUrl" : "https://orgfarm-bbd5ffc44b.my.salesforce-scrt.com",
+        "siteEndpoint" : "https://orgfarm-bbd5ffc44b.my.site.com/ESWLegalReviewagent1745986322509"
+      },
+      "componentName" : "experience_messaging:embeddedMessaging",
+      "id" : "d4154b33-4c60-46d0-8dc8-dfdf38093fc8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "085d261e-1377-4e8d-a1d2-c9ae9d078d17",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "flowArguments" : "",
+        "flowName" : "Document_Details_of_Vendor"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "c4adfc7e-26cf-4d4d-9154-da1db3fc68ab",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bd86f758-5fb9-4b2b-a95e-2e8ea24c25db",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e93134e1-0c6a-4454-b1e9-f94305ea2db0",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a5f7a734-9f08-4a4e-b9b3-9e805acd1268",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}
